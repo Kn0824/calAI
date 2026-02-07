@@ -24,16 +24,17 @@ struct ProfileView: View {
                 
                 VStack {
                     HStack{
-                        VStack{
+                        VStack(alignment: .leading){
                             // Profile info
                             Text("Name: \(name)")
-                                .font(.headline)
-                            Text("Height: \(String(userHeight))cm")
-                                .font(.headline)
-                            Text("Weight: \(String(userWeight))kg")
-                                .font(.headline)
-                            
+                            Text("Age: \(age)")
+                            Text("Height: \(userHeight)cm")
+                            Text("Current Weight: \(userWeight)kg")
+                            Text("Goal Weight: \(goalWeight)kg")
                         }
+                        .foregroundColor(.white)
+                        .font(.title3)
+                        
                         Spacer()
                         Image(systemName: "person.fill")
                             .font(.system(size: 40))

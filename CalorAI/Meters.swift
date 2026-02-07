@@ -10,9 +10,9 @@
 import SwiftUI
 
 struct Meters: View {
-    var curr: Double = 1200
-    var max: Double = 2500
-    var trackingMacro: String = "Calories"
+    @State var curr: Double
+    @State var max: Double
+    @State var trackingMacro: String
     var body: some View {
         VStack {
             HStack {
@@ -29,5 +29,5 @@ struct Meters: View {
 }
 
 #Preview {
-    Meters()
+    Meters(curr: 1200, max: 2500, trackingMacro: "Calories")
 }

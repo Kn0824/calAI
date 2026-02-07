@@ -44,7 +44,7 @@ struct InputView: View {
                     HStack {
                         Spacer()
                         // Input button
-                        Button("Input") {
+                        Button("+") {
                             
                         }
                         .frame(width: 80, height: 20)
